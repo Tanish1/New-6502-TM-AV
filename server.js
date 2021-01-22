@@ -4,4 +4,4 @@ app.use(express.static(path.join(__dirname, 'Public')));
 app.get('/', function(req, res) {
     res.redirect('index.html');
 });
-app.listen(54321);
+app.listen(process.env.PORT);

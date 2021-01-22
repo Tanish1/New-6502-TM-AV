@@ -1,0 +1,18 @@
+{
+  "name": "capstone-lab",
+  "version": "1.0.0",
+  "description": "6502-capstone-project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Tanish & Alex",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "14.15.0"
+  }
+}
