@@ -17,6 +17,26 @@
     
     <body>
     <script src="assembler.js"></script>
+      <script>
+        function saveCode() {
+          var x = document.getElementById('codeInp'); 
+          if (typeof(Storage) !== "undefined") {
+            localStorage.setItem("save0", x.value);
+            
+          } else {
+            document.getElementById("result").innerHTML = "Your browser does not support web storage!";
+          }
+        }
+        function getPreviousCode() {
+          var x = document.getElementById('codeInp');
+          if (typeof(Storage) !== "undefined") {
+            x.value = localStorage.getItem("save0");
+          }
+          else {
+            document.getElementById("result").innerHTML = "Your browser does not support web storage!";
+          }
+        }
+      </script>
     <header class="header-area header-sticky">
         <div class="container">
             <div class="row">
@@ -69,6 +89,10 @@
                 </div>
             </div>
             <div class="row">
+              <p><button onclick="saveCode()" type="button">Save Code</button></p>
+              <p><button onclick="getPreviousCode()" type="button">Get Previous Code</button></p>
+              
+              <div id="result"></div>
                 <div class="col-lg-12">
                     <div class="hr"></div>
                 </div>
@@ -86,14 +110,7 @@
             <input type="button" value="Notes" class="notesButton">
         </div>
 
-        <textarea class="code">
-LDA #$01
-STA $0200
-LDA #$05
-STA $0201
-LDA #$08
-STA $0202
-
+        <textarea id="codeInp">
   </textarea>
 
         <canvas class="screen" width="160" height="160"></canvas>
