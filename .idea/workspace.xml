@@ -22,7 +22,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Game-Lab-TM-AV" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -40,7 +40,7 @@
       <workItem from="1611938045010" duration="3073000" />
       <workItem from="1611943618777" duration="3401000" />
       <workItem from="1612729665240" duration="4062000" />
-      <workItem from="1613062048565" duration="602000" />
+      <workItem from="1613062048565" duration="1737000" />
     </task>
     <task id="LOCAL-00001" summary="Emulator implementation started">
       <created>1612811305609</created>
