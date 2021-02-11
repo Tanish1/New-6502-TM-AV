@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec44eebb-baa0-410a-956c-f9c361e9cb40" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_26_2021_2_18_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_26_2021_2_18_PM__Default_Changelist_.xml" beforeDir="false" />
+    <list default="true" id="ec44eebb-baa0-410a-956c-f9c361e9cb40" name="Default Changelist" comment="Emulator implementation started">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +39,17 @@
       <workItem from="1611603550397" duration="1248000" />
       <workItem from="1611938045010" duration="3073000" />
       <workItem from="1611943618777" duration="3401000" />
-      <workItem from="1612729665240" duration="2793000" />
+      <workItem from="1612729665240" duration="4062000" />
+      <workItem from="1613062048565" duration="602000" />
     </task>
+    <task id="LOCAL-00001" summary="Emulator implementation started">
+      <created>1612811305609</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1612811305611</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -60,5 +66,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Emulator implementation started" />
+    <option name="LAST_COMMIT_MESSAGE" value="Emulator implementation started" />
   </component>
 </project>
