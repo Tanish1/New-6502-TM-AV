@@ -15,7 +15,7 @@
 
     </head>
     
-    <body>
+    <body onload="getPreviousCode()">
     <script src="assembler.js"></script>
     <script src="SaveCode.js"></script>
     <header class="header-area header-sticky">
@@ -91,7 +91,7 @@
             <input type="button" value="Notes" class="notesButton">
         </div>
 
-        <textarea id="codeInp">
+        <textarea id="codeInp" onkeypress="saveCode()" onclick="getPreviousCode()" >
   </textarea>
 
         <canvas class="screen" width="160" height="160"></canvas>
