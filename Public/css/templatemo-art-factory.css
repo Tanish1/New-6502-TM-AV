@@ -116,7 +116,9 @@ figcaption {
 
 html[xmlns] .clearfix {
   display: block;
+  scroll-behavior: smooth;
 }
+
 
 * html .clearfix {
   height: 1%;
