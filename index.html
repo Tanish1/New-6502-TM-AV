@@ -15,7 +15,16 @@
 
     </head>
     
+    
+    
     <body onload="getPreviousCode()">
+      <!-- Load the Realtime libraries. -->
+      <script type="text/javascript"
+        src="https://apis.google.com/js/api.js"></script>
+      
+      <!-- Load the utility library. -->
+      <script type="text/javascript"
+        src="realtime-client-utils.js"></script>
     <script src="assembler.js"></script>
     <script src="SaveCode.js"></script>
     <header class="header-area header-sticky">
@@ -70,8 +79,6 @@
                 </div>
             </div>
             <div class="row">
-              <p><button onclick="saveCode()" type="button">Save Code</button></p>
-              <p><button onclick="getPreviousCode()" type="button">Get Previous Code</button></p>
               <p><button onclick="download()" type="button">Download</button></p>
               
               
@@ -80,6 +87,11 @@
                     <div class="hr"></div>
                 </div>
             </div>
+          <div class="g-savetodrive"
+            data-src="//example.com/path/to/myfile.pdf"
+            data-filename="My Statement.pdf"
+            data-sitename="My Company Name">
+          </div>
         </div>
     </section>
 
