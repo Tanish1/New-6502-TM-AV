@@ -53,14 +53,7 @@ function download(){
 }
 
 var realtimeOptions = {
-  /**
-  * Client ID from the console.
-  */
   clientId: '114704660813-2ghk0jsiaclc1a8h7ble4daag6g3ivus.apps.googleusercontent.com'
-  
-  /**
-  * Add any other options you want.
-  */
 }
 
 function startRealtime() {
