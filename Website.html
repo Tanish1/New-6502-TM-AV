@@ -7,16 +7,11 @@
     <meta name="description" content="Much nicer looking 6502 emulator">
     <meta name="author" content="Alex and Tanish">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-
     <title>6502 Emulator</title>
-    
     <link rel="stylesheet" type="text/css" href="Public/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="Public/css/templatemo-art-factory.css">
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Public/css/style.css">
     </head>
-    
-    
     
     <body onload="getPreviousCode()">
     <script src="SaveCode.js"></script>
@@ -33,11 +28,9 @@
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#welcome" class="active">Home</a></li>
                             <li class="scroll-to-section"><a href="#use">Use the Emulator</a></li>
-                            
                         <a class='menu-trigger'>
                             <span>Menu</span>
                         </a>
-                        <!-- ***** Menu End ***** -->
                     </nav>
                 </div>
             </div>
@@ -62,33 +55,14 @@
 
     <section class="section" id="use">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-7 col-md-12 col-sm-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <img src="Public/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
-                </div>
-                <div class="right-text col-lg-5 col-md-12 col-sm-12 mobile-top-fix">
-                    <div class="left-heading">
-                        <h5>Use the emulator</h5>
-                    </div>
-                    <div class="left-text">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-              <p><button onclick="download()" type="button">Download</button></p>
-              <script src="https://apis.google.com/js/platform.js" async defer></script>
-              <div class="g-savetodrive"
-                data-src="//example.com/path/to/myfile.pdf"
-                data-filename="My Statement.pdf"
-                data-sitename="My Company Name">
-              </div>
-              
-              
-              <div id="result"></div>
-                <div class="col-lg-12">
-                    <div class="hr"></div>
-                </div>
+        <div class="row">
+<!--              <p><button onclick="download()" type="button">Download</button></p>-->
+<!--              <script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<!--              <div class="g-savetodrive"-->
+<!--                data-src="//example.com/path/to/myfile.pdf"-->
+<!--                data-filename="My Statement.pdf"-->
+<!--                data-sitename="My Company Name">-->
+<!--              </div>-->
             </div>
         </div>
     </section>
@@ -103,15 +77,7 @@
         <input type="button" value="Notes" class="notesButton" />
       </div>
       
-      <textarea class="code">
-        
-        LDA #$01
-        STA $0200
-        LDA #$05
-        STA $0201
-        LDA #$08
-        STA $0202
-        
+      <textarea class="code" onkeyup="saveCode()" onclick="getPreviousCode()">
       </textarea>
       
       <canvas class="screen" width="160" height="160"></canvas>

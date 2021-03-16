@@ -1,5 +1,5 @@
 function saveCode() { //Doesn't add it to the directory, automatically saves upon key press
-  var x = document.getElementById('codeInp'); 
+  var x = document.getElementById('code'); 
   if (typeof(Storage) !== "undefined") {
     localStorage.setItem("save0", x.value);
     
@@ -8,7 +8,7 @@ function saveCode() { //Doesn't add it to the directory, automatically saves upo
   }
 }
 function getPreviousCode() { //Doesn't add it to the directory, runs upon the body loads
-  var x = document.getElementById('codeInp');
+  var x = document.getElementById('code');
   if (typeof(Storage) !== "undefined") {
     x.value = localStorage.getItem("save0");
   }
@@ -19,7 +19,7 @@ function getPreviousCode() { //Doesn't add it to the directory, runs upon the bo
 
 
 function saveCodeWD() { //WD is "With Directory"
-  var x = document.getElementById('codeInp'); 
+  var x = document.getElementById('code'); 
   if (typeof(Storage) !== "undefined") {
     localStorage.setItem("save0", x.value);
     
@@ -29,7 +29,7 @@ function saveCodeWD() { //WD is "With Directory"
 }
 
 function getPreviousCodeWD() { //WD is "With Directory"
-  var x = document.getElementById('codeInp');
+  var x = document.getElementById('code');
   if (typeof(Storage) !== "undefined") {
     x.value = localStorage.getItem("save0");
   }
@@ -39,7 +39,7 @@ function getPreviousCodeWD() { //WD is "With Directory"
 }
 
 function download(){
-  var text = document.getElementById("codeInp").value;
+  var text = document.getElementById("code").value;
   text = text.replace(/\n/g, "\r\n"); // To retain the Line breaks.
   var blob = new Blob([text], { type: "text/plain"});
   var anchor = document.createElement("a");
