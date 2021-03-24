@@ -8,6 +8,16 @@ function saveCode() { //Doesn't add it to the directory, automatically saves upo
   }
 }
 
+function getPreviousCode() { //Doesn't add it to the directory, runs upon the body loads
+  var x = document.getElementById('code');
+  if (typeof(Storage) !== "undefined") {
+    x.value = localStorage.getItem("save0");
+  }
+  else {
+    document.getElementById("result").innerHTML = "Your browser does not support web storage!";
+  }
+}
+
 function download(){
   var text = document.getElementById("code").value;
   text = text.replace(/\n/g, "\r\n"); // To retain the Line breaks.
