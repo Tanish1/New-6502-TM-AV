@@ -35,6 +35,8 @@
     float: left;
     width: 160px;
     height: 290px;
+    margin: 0 0 0 6px;
+    
 }
 
 .screen {
@@ -116,7 +118,7 @@
     padding: 6px;
     border: 1px solid black;
     width: 150px;
-    height: 290px;
+    height: 435px;
     font-family: monospace;
     overflow: auto;
     float: right;
