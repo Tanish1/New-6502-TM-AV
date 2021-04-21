@@ -8,13 +8,14 @@ var txt = "";
 function generateStack(stackList) {
 	for (i = 0; i < 256; i++) {
 		hexString = i.toString(16);
+		
 		final = hexString + ":" + zero;
 		stackList.push(final);
 	}
 }
 
 function newLineArray(value) {
-    txt = txt + value + "<br>";
+    txt = txt + value + '\n';
 }
 
 generateStack(stackList);
