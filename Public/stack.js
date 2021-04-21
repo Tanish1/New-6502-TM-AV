@@ -13,6 +13,7 @@ function generateStack(stackList) {
 		else {
 			hexString = i.toString(16);
 		}
+		hexString = hexString.toUpperCase();
 		final = hexString + ":" + zero;
 		stackList.push(final);
 	}
