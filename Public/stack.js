@@ -6,9 +6,13 @@ var final;
 var txt = "";
 
 function generateStack(stackList) {
-	for (i = 0; i < 256; i++) {
-		hexString = i.toString(16);
-		
+	for (i = 255; i >= 0; i--) {
+		if (i <= 15) {
+			hexString = "0" + i.toString(16);
+		}
+		else {
+			hexString = i.toString(16);
+		}
 		final = hexString + ":" + zero;
 		stackList.push(final);
 	}
