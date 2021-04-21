@@ -19,6 +19,7 @@
     <script src="Public/es5-shim.js"></script>
     <script src="Public/assembler.js"></script>
     <script src="Public/scale.fix.js"></script>
+    <script src="Public/stack.js"></script>
     <header class="header-area header-sticky">
         <div class="container">
             <div class="row">
@@ -71,35 +72,11 @@
         <button onclick="download()" type="button">Download</button>
       </div>
       
-      <textarea class="code" id="code" onkeyup="saveCode()" onclick="getPreviousCode()">
-      </textarea>
+      <textarea class="code" id="code" onkeyup="saveCode()" onclick="getPreviousCode()"></textarea>
       
-      <textarea class="stack" id="stack">
-Stack Area
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
-        
-        
-        
-        
-        
-        
-        
-Scrollable
-      </textarea>
+      <textarea class="stack" id="stack"></textarea>
+      <script src="Public/stack.js"></script>
+      
       <div class = "center">
         <canvas class="screen" width="160" height="160"></canvas>
         

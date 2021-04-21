@@ -1,13 +1,22 @@
 var stackList = [];
+var i;
+var hexString;
+var zero = "00";
+var final;
+var txt = "";
 
 function generateStack(stackList) {
-	var i;
-	var hexString;
-	var zero = "00";
-	var final;
-	for (i = 1; i < 257; i++) {
+	for (i = 0; i < 256; i++) {
 		hexString = i.toString(16);
 		final = hexString + ":" + zero;
 		stackList.push(final);
 	}
-} 
+}
+
+function newLineArray(value) {
+    txt = txt + value + "<br>";
+}
+
+generateStack(stackList);
+stackList.forEach(newLineArray);
+document.getElementById("stack").innerHTML = txt;
