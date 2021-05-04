@@ -307,8 +307,6 @@ function SimulatorWidget(node) {
     var debug = false;
     var monitoring = false;
     var executeId;
-    
-    
 
     // Set zero and negative processor flags based on result
     function setNVflags(value) {
@@ -322,10 +320,6 @@ function SimulatorWidget(node) {
       } else {
         regP &= 0x7f;
       }
-    }
-    
-    function showStackP(regSP) {
-      showStackP(regSP);
     }
 
     function setCarryFlagFromBit0(value) {
@@ -1593,10 +1587,13 @@ function SimulatorWidget(node) {
     }
 
     function updateMonitor() {
-      //showStackP(regSP);
+      updateStack(memory, regSP);
+
       if (monitoring) {
         var start = parseInt($node.find('.start').val(), 16);
         var length = parseInt($node.find('.length').val(), 16);
+
+        //console.log("Hello Again!")
 
         var end = start + length - 1;
 

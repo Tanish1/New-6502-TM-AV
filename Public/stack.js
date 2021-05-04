@@ -4,10 +4,8 @@ var hexString;
 var zero = "00";
 var final;
 var txt = "";
-var temp;
-var finStr = "";
 
-function generateStack() {
+function generateStack(stackList) {
 	for (i = 255; i >= 0; i--) {
 		if (i <= 15) {
 			hexString = "0" + i.toString(16);
@@ -25,28 +23,24 @@ function newLineArray(value) {
     txt = txt + value + '\n';
 }
 
-function updateStack(memory) {
+function updateStack(memory, regSP) {
 	stackList = [];
 	txt = "";
 	//console.log("Hello!")
 	for (i = 255; i >= 0; i--) {
 		if (i <= 15) {
-			hexString = "00" + i.toString(16);
+			hexString = "0" + i.toString(16);
 		}
 		else {
 			hexString = i.toString(16);
 		}
 		hexString = hexString.toUpperCase();
 		final = hexString + ":" + memory.get(0x100 + i).toString(16);
+		if (regSP == i) {
+			final = final + " <--";
+		}
 		stackList.push(final);
 	}
-
-function showStackP (SP) {
-	temp = SP;
-	finStr = stackList[temp] + " <--";
-	stackList[temp] = finStr;
+	stackList.forEach(newLineArray);
+	document.getElementById("stack").innerHTML = txt;
 }
-
-generateStack();
-stackList.forEach(newLineArray);
-document.getElementById("stack").innerHTML = txt;
