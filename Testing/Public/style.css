@@ -1,0 +1,125 @@
+.widget {
+    width: 750px;
+    margin: 30px auto;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.buttons {
+    margin: 6px 0;
+}
+
+.start, .length {
+    width: 50px;
+}
+
+.widget pre {
+    margin: 0;
+    padding: 0;
+    background: inherit;
+    border: none;
+}
+
+.code {
+    margin: 0 0 6px 0;
+    padding: 6px;
+    border: 1px solid black;
+    width: 420px;
+    height: 290px;
+    font-family: monospace;
+    overflow: auto;
+    float: left;
+}
+
+.center {
+    float: left;
+    width: 160px;
+    height: 290px;
+    margin: 0 0 0 6px;
+    
+}
+
+.screen {
+    float: left;
+    width: 160px;
+    height: 160px;
+}
+
+.debugger {
+    border: 1px black solid;
+    padding: 3px;
+    padding-top: 8px;
+    height: 130px;
+    width: 160px;
+    text-align: center;
+    float: right;
+}
+
+.minidebugger {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    font-size: 10px;
+}
+
+.monitorControls {
+    width: 587px;
+    clear: both;
+    margin-bottom: 10px;
+    padding: 0;
+    float: left;
+}
+
+.monitorControls input {
+    margin-right: 0.5em;
+    float: center;
+}
+
+.monitor {
+    margin: 10px 0;
+    padding: 6px;
+    border: 1px solid #999;
+    background-color: #ddd;
+    width: 587px;
+    height: 100px;
+    overflow: auto;
+    display: none;
+    float: left;
+}
+
+.monitor-invalid {
+    border: 1px inset #c00;
+    padding: 2px 1px;
+    float: left;
+}
+
+.messages {
+    margin: 0;
+    padding: 6px;
+    border: 1px solid #999;
+    background-color: #eee;
+    overflow: auto;
+    width: 587px;
+    height: 100px;
+    text-align: left;
+    font-size: 12px;
+    color: #444;
+    float: left;
+}
+
+.left {
+    float: left;
+    width: 600px;
+    height: 290px;
+}
+
+.stack {
+    margin: 0 0 6px 0;
+    padding: 6px;
+    border: 1px solid black;
+    width: 150px;
+    height: 435px;
+    font-family: monospace;
+    overflow: auto;
+    float: right;
+}
