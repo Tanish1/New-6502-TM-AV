@@ -4,6 +4,7 @@ var hexString;
 var zero = "00";
 var final;
 var txt = "";
+var two = "";
 
 function generateStack(stackList) {
 	for (i = 255; i >= 0; i--) {
@@ -26,7 +27,6 @@ function newLineArray(value) {
 function updateStack(memory, regSP) {
 	stackList = [];
 	txt = "";
-	//console.log("Hello!")
 	for (i = 255; i >= 0; i--) {
 		if (i <= 15) {
 			hexString = "0" + i.toString(16);
@@ -35,7 +35,11 @@ function updateStack(memory, regSP) {
 			hexString = i.toString(16);
 		}
 		hexString = hexString.toUpperCase();
-		final = hexString + ":" + memory.get(0x100 + i).toString(16);
+		two = memory.get(0x100 + i).toString(16);
+		if (two.length == 1) {
+			two = "0" + two;
+		}
+		final = hexString + ":" + two;
 		if (regSP == i) {
 			final = final + " <--";
 		}
